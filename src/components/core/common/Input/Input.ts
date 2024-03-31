@@ -37,7 +37,7 @@ export const TextareaCommon = styled(Input.TextArea)<InputPropsStyles>`
       props?.fontWeight || props?.theme?.fontWeight?.regular};
     line-height: 1.7;
     height: auto;
-    color: #fff;
+    color: #000 !important;
 
     &:not(:disabled):hover,
     &:not(:disabled):focus,
@@ -325,7 +325,7 @@ export const InputCommon = styled(Input)<InputPropsStyles>`
       ${(props) =>
         props?.borderColor || props?.theme?.colors?.other?.background1};
     /* color: ${(props) => props?.color || props?.theme?.colors?.textColor}; */
-    color: #fff;
+    color: #000;
     background: ${(props) => props.backgroundColor || '#ffffff'};
     border-radius: ${({ theme }) => theme?.radius?.normalRadius};
     font-size: ${(props) => props?.fontSize || props?.theme?.fontSize?.base};

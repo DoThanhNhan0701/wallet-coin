@@ -16,6 +16,7 @@ export default function MainLayout({
   title = 'Velociti',
   children,
 }: AdminLayoutProps) {
+  const { Header } = Layout;
   return (
     <>
       <Head>
@@ -25,6 +26,14 @@ export default function MainLayout({
       </Head>
       <S.AdminLayoutWrap>
         <Layout className="site-layout">
+          <Header>
+            <div className="header-bitget">
+              <div>Logo</div>
+              <div className="button-connect-wallet">
+                <div className="content">Connect wallet</div>
+              </div>
+            </div>
+          </Header>
           <Content>
             <motion.div
               initial={{ opacity: 0 }}

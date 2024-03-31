@@ -34,11 +34,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         height="4px"
       />
       <Web3Modal>
-        <MainLayout>
-          <Layout title={title}>
-            <Component {...pageProps} />
-          </Layout>
-        </MainLayout>
+        <Layout title={title}>
+          <Component {...pageProps} />
+        </Layout>
       </Web3Modal>
     </ThemeProvider>
   );
